@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="images/logo colored.png" type="image/x-icon">
+    <title>StellarQuest</title>
+</head>
+<body oncontextmenu="return false;">
+    <div id="menu">
+        <video src="images/videoplayback (3).mp4" autoplay loop muted id="startVideo"></video>
+        <div id="screen1">
+            <p id="title">StellarQuest</p>
+            <button id="start" onclick="Start()">POČNI</button>
+            <button id="options">UPUTSTVO</button>
+            <button id="exit" onclick = "Exit()">IZADJI</button>
+        </div>
+        <p id="version">v0.26nbSG</p>
+        <p id="author">Stefan Grujicic 40/2022</p>
+    </div>
+    <div id="uputstvo">
+        <div id="uMenu">
+            <img src="images/logo colored.png" alt="" id="logoX">
+            <p id="xButton">X</p>
+            <p>Dobrodosli u StellarQuest, igrica namenjena za ucenje suncevog sistema i planeta.
+                Kroz igricu cete prvo nauciti nesto o samom suncevom sistemu, a zatim redom i o samim planetama.
+                Pritiskom na neku planetu pokrece se zadatak koji morate resiti da bi saznali nesto o toj planeti i
+                otkljucali sledecu. Planete sive boje su zakljucane i morate otkljucati sve prethodne planete da
+                biste otkljucali sledecu. Pri resavanju zadatka, astronauta pomerate koriscenjem
+                W A S D ili strelica na tastaturi. Da biste presli zadatak potrebno je da pokupite kljuc
+                i otkljucate kovceg u kom se nalaze informacije o planeti. Asteroide pomerate tako sto
+                se pomerite prema njima.
+                
+            </p>
+            <div id="legendList">
+                <div id="legend">
+                    <img src="images/astro.png" alt="" id="legendSlika">
+                    <p id="legendText">Astronaut</p>
+                </div>
+                <div id="legend">
+                    <img src="images/key.png" alt="" id="legendSlika">
+                    <p id="legendText">Kljuc</p>
+                </div>
+                <div id="legend">
+                    <img src="images/chest.png" alt="" id="legendSlika">
+                    <p id="legendText">Kovceg</p>
+                </div>
+                <div id="legend">
+                    <img src="images/asteroid.png" alt="" id="legendSlika">
+                    <p id="legendText">Asteroid</p>
+                </div>
+                <div id="legend">
+                    <img src="images/portal.png" alt="" id="legendSlika">
+                    <p id="legendText">Portal - sluzi da vas prebaci preko rupe</p>
+                </div>
+                <div id="legend">
+                    <img src="images/portal_token.png" alt="" id="legendSlika" class ="krug">
+                    <p id="legendText">Portal Token - Pokupite ga i pojavi se portal</p>
+                </div>
+                <div id="legend">
+                    <img src="images/alien.png" alt="" id="legendSlika">
+                    <p id="legendText">Vanzemaljac - Pritiskom na vanzemaljca on rotira objekat levo i desno od njega</p>
+                </div>
+                <div id="legend">
+                    <img src="images/alien_token.png" alt="" id="legendSlika" class ="krug">
+                    <p id="legendText">Vanzemaljac Token - Kada pokupite token mozete pritisnuti na neku rupu i tu ce se pojaviti Vanzemaljac</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav">
+        <button class="navButton nb1"><</button>
+        <button class="navButton nb2">></button>
+    </div>
+    <div id="learnSolar">
+        <p id="learnSQ">StellarQuest</p>
+        <img src="images/logo colored.png" alt="">
+        <p id="solarText">
+            Suncev ili Solarni sistem cini Sunce i sva nebeska tela koja su gravitaciono vezana za njega. 
+            Suncev sistem je podrucje u vasioni gde je njegova gravitaciona sila dominantna, tj. 
+            veca od gravitacionih sila drugih zvezda i Galaksije. Nebeska tela koja pripadaju 
+            Suncevom sistemu su: planete, njihovi prirodni sateliti i mala tela Suncevog sistema. 
+        </p>
+        <button id="nextButton" onclick="nextText()">Dalje ></button>
+        <button id="saznajVise" onclick="saznajViseFun()">*Saznaj Više*</button>
+    </div>
+    <div id="solar">
+            <div id="sun"></div>
+            <img src="images/astro.png" alt="" id="astro">
+            <div id="mercury"><p>Merkur</p></div>
+            <div id="venus"><p>Venera</p><img src="images/lockGold.png" alt="" id="venusLock"></div>
+            <div id="earth"><p>Zemlja</p><img src="images/lockGold.png" alt="" id="earthLock"></div>
+            <div id="mars"><p>Mars</p><img src="images/lockGold.png" alt="" id="marsLock"></div>
+            <div id="jupiter"><p>Jupiter</p><img src="images/lockGold.png" alt="" id="jupiterLock"></div>
+            <div id="saturn"><p>Saturn</p><img src="images/lockGold.png" alt="" id="saturnLock"></div>
+            <img src="images/saturn-rings.svg" alt="" id="ring">
+            <div id="uranus"><p>Uran</p><img src="images/lockGold.png" alt="" id="uranusLock"></div>
+            <div id="neptune"><p>Neptun</p><img src="images/lockGold.png" alt="" id="neptuneLock"></div>
+            <img src="images/crtice.png" alt="" id="crtice">
+    </div>
+    <div id="game">
+        <img src="images/restart.png" alt="" id="restart">
+        <div id="gameScreen" tabindex="0">
+
+        </div>
+    </div>
+    <div id="info">
+        <div id="infoScreen">
+            <p id="xButton2">X</p>
+            <p id="nazivPlanete"></p>
+            <img src="images/logo colored.png" alt="" id="logo">
+        <div id="planetaMenu">
+            <p id="opisText">Opis</p>
+            <p id="galerijaText">Galerija</p>
+            <p id="zanimljivostiText">Zanimljivosti</p>
+        </div>
+        <div id="opisDiv">
+            
+        </div>
+        <div id="galerijaDiv">
+            
+        </div>
+        <div id="zanimljivostiDiv">
+           
+        </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,876 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+    overflow-x: none;
+}
+
+#menu{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+#menu video{
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+    object-fit: cover;
+}
+
+#screen1{
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+@font-face {
+    font-family: "tt1";
+    src: url(fonts/RubikWetPaint-Regular.ttf);
+}
+#title{
+    color: white;
+    font-size: 80px;
+    margin: 0;
+    font-family: "tt1",sans-serif;
+}
+
+#start,#options,#exit{
+    color: white;
+    font-family: "tt1",sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px 3px white;
+    border: none;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom:5px solid rgb(3, 40, 84);
+    background-image: linear-gradient(rgb(49, 135, 255), rgb(6, 61, 129));
+    transition: 0.5s;
+    text-align: center;
+}
+#start:hover,#options:hover,#exit:hover{
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 0px 2px 5px 5px white;
+    color:rgb(150, 206, 252);
+}
+#exit{
+    margin-bottom: 20px;
+}
+#start{
+    margin-top: 50px;
+}
+
+@keyframes outUp {
+    100%{
+        top:-50%;
+    }
+}
+
+@keyframes opDisp {
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+#solar{
+    min-width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    scroll-behavior: smooth;
+    background-image: url(images/pexels-photo-7466846.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+#sun{
+    height: 1024px;
+    width: 1024px;
+    position: relative;
+    object-fit: fill;
+    margin-left: -850px;
+    background-image: url(images/sun.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    animation: sunRotate 100s linear infinite;
+    box-shadow: 0px 0px 170px 70px rgb(255, 255, 255),
+    0px 0px 170px 100px rgb(245, 219, 20),
+    0px 0px 350px 350px rgb(222, 148, 10),
+    inset -50px 0px 100px 30px rgb(255, 196, 141);
+    
+    background-position: 0px 0px;
+    transition: 0.5s;
+}
+#sun:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 220px 110px rgb(255, 255, 255),
+    0px 0px 220px 130px rgb(245, 219, 20),
+    0px 0px 420px 420px rgb(222, 148, 10),
+    inset -50px 0px 100px 30px rgb(255, 196, 141);
+}
+
+@keyframes sunRotate{
+    100%{
+        background-position: -4096px 0px;
+    }
+}
+
+#mercury{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    object-fit: fill;
+    background-image: url(images/mercury\ map2.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    animation: mercuryRotate 10s linear infinite;
+    scale: 0.3;
+    margin-left: 250px; /*250px*/
+    box-shadow: inset -10px 0px 30px 5px black,
+                inset 5px 0px 50px 1px rgb(255, 229, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+#mercury p{
+    color: white;
+    font-size: 70px;
+    margin-top: 550px;
+    
+}
+@keyframes mercuryRotate{
+    100%{
+        background-position: -218px 0px;
+    }
+}
+
+#venus{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    object-fit: fill;
+    background-image: url(images/venus\ map.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    animation: venusRotate 10s linear infinite;
+    scale: 0.3;
+    box-shadow: inset -30px 0px 30px 5px black,
+                inset 20px 0px 100px 1px rgb(255, 176, 103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale();
+}
+#venus p{
+    color: white;
+    font-size: 70px;
+    margin-top: 550px;
+    
+}
+#venus img{
+    margin-top: 480px;
+}
+@keyframes venusRotate{
+    100%{
+        background-position: 400px 0px;
+    }
+}
+
+#earth{
+    height: 342px;
+    width: 342px;
+    position: relative;
+    object-fit: fill;
+    background-image: url(images/earth.jpg.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    animation: earthRotate 20s linear infinite;
+    scale: 0.22;
+    margin-left: -60px;
+    transform: rotate(23.5deg);
+    box-shadow: inset -30px 0px 30px 10px black,
+                inset 20px 0px 100px 1px rgb(103, 192, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                filter: grayscale();
+}
+#earth p{
+    color: white;
+    font-size: 90px;
+    margin-top: 850px;
+    margin-left: 320px;
+    transform: rotate(-23.5deg);
+}
+@keyframes earthRotate{
+    100%{
+        background-position: -700px 0px;
+    }
+}
+
+#mars{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    object-fit: fill;
+    background-image: url(images/mars\ map.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    animation: marsRotate 10s linear infinite;
+    scale: 0.22;
+    margin-left: -80px;
+    box-shadow: inset -20px 0px 30px 5px black,
+                inset 5px 0px 50px 1px rgb(255, 146, 45);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                filter: grayscale();
+    
+}
+#mars p{
+    color: white;
+    font-size: 90px;
+    margin-top: 750px;
+    
+}
+@keyframes marsRotate{
+    100%{
+        background-position: -300px 0px;
+    }
+}
+
+#jupiter{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    object-fit: fill;
+    background-image: url(images/jupiter\ map.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    animation: jupiterRotate 30s linear infinite;
+    transform: rotate(-10deg);
+    margin-left: 100px;
+    box-shadow: inset -30px 0px 30px 10px black,
+                inset 20px 0px 100px 1px rgb(255, 176, 103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale();
+}
+#jupiter p{
+    color: white;
+    font-size: 50px;
+    margin-top: 550px;
+    transform: rotate(10deg);
+    margin-left: -100px;
+}
+@keyframes jupiterRotate{
+    100%{
+        background-position: -700px 0px;
+    }
+}
+
+#saturn{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    object-fit: fill;
+    background-image: url(images/saturn\ map.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    animation: saturnRotate 10s linear infinite;
+    transform: rotate(30deg);
+    margin-left: 200px;
+    box-shadow: inset -10px 0px 30px 10px black,
+                inset 20px 0px 100px 1px rgb(255, 219, 142);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                filter: grayscale();
+}
+#saturn p{
+    color: white;
+    font-size: 50px;
+    margin-top: 350px;
+    transform: rotate(-30deg);
+    margin-left: 150px;
+}
+@keyframes saturnRotate{
+    100%{
+        background-position: -500px 0px;
+    }
+}
+#uranus{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    object-fit: fill;
+    background-image: url(images/uranus\ map.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    animation: uranusRotate 10s linear infinite;
+    margin-left: 200px;
+    scale: 0.6;
+    box-shadow: inset -10px 0px 30px 5px rgb(0, 0, 0),
+                inset 5px 0px 50px 1px rgb(154, 223, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                filter: grayscale();
+}
+#uranus p{
+    color: white;
+    font-size: 50px;
+    margin-top: 350px;
+}
+@keyframes uranusRotate{
+    100%{
+        background-position: -307px 0px;
+    }
+}
+#neptune{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    object-fit: fill;
+    background-image: url(images/neptune.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    animation: neptuneRotate 10s linear infinite;
+    margin-left: 200px;
+    scale: 0.5;
+    box-shadow: inset -10px 0px 30px 5px rgb(0, 0, 0),
+                inset 5px 0px 50px 1px rgb(32, 181, 251);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                filter: grayscale();
+}
+#neptune p{
+    color: white;
+    font-size: 50px;
+    margin-top: 350px;
+}
+@keyframes neptuneRotate{
+    100%{
+        background-position: -300px 0px;
+    }
+}
+
+#crtice{
+    z-index: 0;
+    position: absolute;
+    scale: 0.42;
+    margin-left: -985px;
+    opacity: 0.6; 
+}
+#solar div{
+    z-index: 5;
+}
+
+#ring{
+    position: absolute;
+    margin-left: 1483px;
+    margin-top: 43px;
+    scale: 0.732;
+    z-index: 5;
+    pointer-events: none;
+    cursor: pointer;
+    filter: grayscale();
+}
+
+
+#astro{
+    /*300*/
+    position: absolute;
+    width: 100px;
+    margin-left: 300px;
+    z-index: 15;
+    animation: idle 1.3s infinite ease-in-out;
+    margin-top: -10px;
+    transition: 0.5s;
+    scale: 0.4;
+}
+
+
+@keyframes idle {
+    50%{
+        margin-top: 20px;
+    }
+    100%{
+        margin-top: -10px;
+    }
+}
+
+#venusLock{
+    pointer-events: none;
+    z-index: 6;
+    width: 80px;
+}
+
+#earthLock{
+    pointer-events: none;
+    z-index: 6;
+    width: 80px;
+    transform: rotate(-23.5deg);
+    margin-top: 620px;
+}
+
+#marsLock{
+    pointer-events: none;
+    z-index: 6;
+    width: 80px;
+    margin-top: 670px;
+    margin-left: 10px;
+}
+
+#jupiterLock{
+    pointer-events: none;
+    z-index: 6;
+    width: 40px;
+    transform: rotate(10deg);
+    margin-top: 535px;
+}
+
+#saturnLock{
+    pointer-events: none;
+    margin-top: 215px;
+    z-index: 6;
+    width: 30px;
+    transform: rotate(-30deg);
+}
+#uranusLock{
+    pointer-events: none;
+    margin-top: 305px;
+    z-index: 6;
+    width: 40px;
+}
+#neptuneLock{
+    pointer-events: none;
+    z-index: 6;
+    margin-top: 305px;
+    width: 40px;
+}
+
+#learnSolar
+{
+    position: absolute;
+    top:0;
+    left:0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 8;
+    align-items: center;
+    background-color: rgba(47, 47, 47, 0.72);
+}
+
+#learnSQ{
+    color: white;
+    font-size: 80px;
+    margin: 0;
+    margin-top: 20px;
+    font-family: "tt1",sans-serif;
+}
+
+#learnSolar img{
+    margin-top: 40px;
+    width: 70px;
+    animation: rotLogo infinite 2s ease-in-out;
+}
+
+@keyframes rotLogo {
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+#solarText{
+    color: white;
+    font-size: 25px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 0px 3px black;
+    background-image: url(images/photo-1701105040869-40cb9a5bbe6c.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    font-family: "tt2",sans-serif;
+    
+}
+
+@font-face {
+    font-family: "tt2";
+    src: url(fonts/UAV-OSD-Sans-Mono.ttf);
+}
+
+#nextButton,#saznajVise{
+    border: 0;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    font-family: "tt1",sans-serif;
+    background-color: black;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border-radius: 50px;
+    background-image: url(images/photo-1701105040869-40cb9a5bbe6c.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-shadow: 0px 3px black;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+#nextButton:hover, #saznajVise:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px white;
+    scale: 1.1;
+}
+
+#saznajVise{
+    display: none;
+    margin-top: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right,rgb(75, 75, 75),rgb(0, 0, 0));
+}
+  
+#uputstvo{
+    position: absolute;
+    top:0;
+    left:0;
+    min-width: 100vw;
+    height: 100vh;
+    background-color: rgba(62, 62, 62, 0.4);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#uMenu{
+    background-color: rgba(21, 21, 21, 0.9);
+    color: white;
+    font-family: "tt2",sans-serif;
+    width: 70%;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    line-height: 40px;
+    border:2px solid white;
+    position: relative;
+}
+
+
+#xButton,#xButton2{
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#xButton:hover,#xButton2:hover{
+    cursor: pointer;
+}
+
+#logoX{
+    width: 100px;
+    animation: rotLogo infinite 2s ease-in-out;
+}
+
+#game{
+    position: fixed;
+    top:0;
+    left:0;
+    min-width: 100vw;
+    height: 100vh;
+    background-color: rgba(43, 43, 43, 0.7);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#nav{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+    display: flex;
+    gap:20px;
+}
+
+.navButton{
+    width: 80px;
+    height: 80px;
+    background-image: url(images/photo-1701105040869-40cb9a5bbe6c.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid white;
+    
+}
+.navButton:hover{
+    cursor: pointer;
+}
+
+#gameScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/terrain1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    outline: none;
+    user-select: none;
+}
+
+#gameScreen:focus{
+    outline: none;
+    user-select: none;
+}
+
+#gameRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameField{
+    width: 83px;
+    height: 83px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameField img{
+    max-height: 80%;
+    max-width: 80%;
+}
+
+#info{
+    position: fixed;
+    top:0;
+    left:0;
+    min-width: 100vw;
+    height: 100vh;
+    background-color: rgba(43, 43, 43, 0.7);
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+#planetaMenu{
+    gap:10px;
+    display: flex;
+    color: rgb(220, 217, 217);
+    font-size: 30px;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: gray;
+    border-radius: 40px;
+    width: 100%;
+}
+#planetaMenu p{
+    margin: 0;
+    font-family: "tt2";
+    font-size: 20px;
+    color:black;
+    padding: 10px;
+    border-radius: 40px;
+    text-align: center;
+    width: 33.3%;
+}
+#planetaMenu p:hover{
+    cursor: pointer;
+}
+#opisText{
+    background-color: white;
+    
+   
+}
+
+#infoScreen{
+    background-color: rgba(17, 17, 17, 0.815);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    padding: 30px;
+    border-radius: 30px;
+    gap:20px;
+    position: relative;
+}
+#nazivPlanete{
+    color:white;
+    font-family: "tt1";
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+#opisDiv,#zanimljivostiDiv{
+    color:white;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+
+#logo{
+    width: 70px;
+    animation: rotLogo infinite 2s ease-in-out;
+}
+#galerijaDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+#galerijaDiv img{
+    max-width: 50%;
+    
+}
+#zanimljivostiDiv, #opisDiv{
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+#xButton2
+{
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+#restart{
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    border-radius: 20%;
+    padding: 20px;
+}
+
+#restart:hover{
+    cursor: pointer;
+}
+
+#legendList{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+}
+#legend{
+    display: flex;
+    gap:20px;
+    border: 2px solid white;
+    padding: 5px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#legendSlika{
+    width: 70px;
+    height: 70px;
+}
+
+.krug{
+    background-color: white;
+    border-radius: 50%;
+}
+
+#legendText{
+    font-size: 12px;
+}
+
+#version{
+    position: absolute;
+    color: white;
+    left:10px;
+    bottom: 10px;
+    font-size: 25px;
+    font-family: "tt1";
+    margin: 0px;
+}
+
+#author{
+    position: absolute;
+    color: white;
+    right:10px;
+    bottom: 10px;
+    font-size: 25px;
+    font-family: "tt1";
+    margin: 0px;
+}
