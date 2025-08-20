@@ -238,7 +238,7 @@ const neptuneLock = document.getElementById("neptuneLock")
 const nav = document.getElementById("nav")
 const endText = document.getElementById("endText")
 endText.style.display = "none";
-
+let endScreen = 0;
 xButton2.addEventListener("click", () => {
     info.style.display = "none";
     astro.style.marginLeft = "300px";
@@ -282,7 +282,7 @@ xButton2.addEventListener("click", () => {
         neptuneLock.style.display = "none"
     }
 
-    if(completedNeptune)
+    if(completedNeptune && !endScreen)
     {
         window.scrollTo({left: 0, behavior: "instant"});
         solar.style.animationName = "finalMove";
@@ -291,6 +291,7 @@ xButton2.addEventListener("click", () => {
         endText.style.display = "block";
         body.style.overflowX = "hidden";
         nav.style.display = "none"
+        endScreen = 1;
     }
 })
 
