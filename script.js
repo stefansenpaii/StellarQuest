@@ -748,7 +748,7 @@ opisText.addEventListener("click", () => {
     opisText.style.backgroundColor = "white"
     galerijaText.style.backgroundColor = "transparent"
     zanimljivostiText.style.backgroundColor = "transparent"
-    opisDiv.style.display = "flex"
+    opisDiv.style.display = "block"
     galerijaDiv.style.display = "none"
     zanimljivostiDiv.style.display = "none"
 
@@ -773,36 +773,30 @@ zanimljivostiText.addEventListener("click", () => {
 
 })
 
-let merkurOpis = `Merkur (simbol: ☿) je najmanja, a ujedno i najbliža planeta 
-Suncu i jedna od 8 planeta u Sunčevom sistemu,čiji orbitalni period 
-traje oko 88 zemaljskih dana. Gledano sa Zemlje, Merkuru je potrebno 
-skoro 116 dana da napravi jedan puni krug oko svoje orbite, što je mnogo brže 
-nego kod i jedne druge planete. Upravo ova brzina revolucije Merkura je i bila 
-razlog zbog kojeg je ta planeta dobila ime po starorimskom bogu trgovine i putovanja 
-i glasniku bogova Merkuru (lat. Mercurius; grčki ekvivalent je Hermes).<br><br>
-Zbog gotovo nepostojanja atmosfere koja bi ublažila sunčevo zračenje, 
-površina Merkura je izložena najintenzivnijim temperaturnim varijacijama 
-među svim planetama Sunčevog sistema, koje se na području oko ekvatora kreću između -173 °C 
-u toku noći i +427 °C u toku dana. Temperature na polovima su konstantno ispod -93 °C. <br><br>
-Merkur je specifičan i po nagibu svoje ose jer ima najmanju vrednost među svim planetama 
-Sunčevog sistema i iznosi svega 2,11′ (oko trideseti deo stepena), ali i po najizraženijem 
-ekscentricitetu orbite. U fazi afela Merkur je čak 1,5 puta dalje od Sunca u odnosu na perihel. 
-Prosečna udaljenost Merkura od Sunca je 0,387 AJ ili 57.910.000 km. Godišnja doba ne postoje u 
-smislu godišnjih doba na Zemlji, što je posledica malog nagiba ose. <br><br>Površina Merkura je 
-izbrazdana brojnim kraterima meteorskog porekla i slična je površini Meseca, što navodi na 
-zaključak da je sama planeta u geološkom stanju mirovanja više miliona godina.
-U gravitacionom smislu Merkur je gravitaciono zarobljena planeta i ima potpuno 
-jedinstven sistem rotacije u odnosu na ostale objekte Sunčevog sistema. <br><br>
-Za vreme jedne revolucije, Merkur izvrši svega jednu i po rotaciju (dok Zemlja ima odnos 365:1).
-Pošto Merkurova orbita leži u ravni sa orbitom Zemlje (kao što je slučaj i sa Venerom), 
-ova planeta je vidljiva na zemljinom nebu tokom ranog jutra i uveče, ali ne i tokom ponoći. <br><br>
-Zbog blizine Sunca, retko je u povoljnom položaju za posmatranje, a i tada je vidljiv iznad 
-horizonta samo kratko vreme pre zalaska ili nakon izlaska Sunca. Gledano sa Zemlje, Merkur 
-je vidljiv u raznim fazama (poput Meseca u svojim menama).<br><br> Prva svemirska letelica koja se 
-približila Merkuru bila je Mariner 10 tokom sedamdesetih godina 20. veka. Ona je tokom tri 
-„susreta“ snimila oko 45% površine planete.<br><br> Nova sonda MESSENGER, lansirana u avgustu 2004,
-u orbitu Merkura ušla je u martu 2011. i tokom naredne dve godine uspela je da snimi celokupnu
-površinu ove planete.`
+let merkurOpis = `<p>
+    Merkur (simbol: ☿) je najmanja, a ujedno i najbliža planeta Suncu i jedna od 8 planeta u Sunčevom sistemu,čiji orbitalni period traje oko 88 zemaljskih dana. Gledano sa Zemlje, Merkuru je potrebno skoro 116 dana da napravi jedan puni krug oko svoje orbite, što je mnogo brže nego kod i jedne druge planete. Upravo ova brzina revolucije Merkura je i bila razlog zbog kojeg je ta planeta dobila ime po starorimskom bogu trgovine i putovanja i glasniku bogova Merkuru (lat. Mercurius; grčki ekvivalent je Hermes).
+  </p>
+  <p>
+    Zbog gotovo nepostojanja atmosfere koja bi ublažila sunčevo zračenje, površina Merkura je izložena najintenzivnijim temperaturnim varijacijama među svim planetama Sunčevog sistema, koje se na području oko ekvatora kreću između -173 °C u toku noći i +427 °C u toku dana. Temperature na polovima su konstantno ispod -93 °C.
+  </p>
+  <p>
+    Merkur je specifičan i po nagibu svoje ose jer ima najmanju vrednost među svim planetama Sunčevog sistema i iznosi svega 2,11′ (oko trideseti deo stepena), ali i po najizraženijem ekscentricitetu orbite. U fazi afela Merkur je čak 1,5 puta dalje od Sunca u odnosu na perihel. Prosečna udaljenost Merkura od Sunca je 0,387 AJ ili 57.910.000 km. Godišnja doba ne postoje u smislu godišnjih doba na Zemlji, što je posledica malog nagiba ose.
+  </p>
+  <p>
+    Površina Merkura je izbrazdana brojnim kraterima meteorskog porekla i slična je površini Meseca, što navodi na zaključak da je sama planeta u geološkom stanju mirovanja više miliona godina. U gravitacionom smislu Merkur je gravitaciono zarobljena planeta i ima potpuno jedinstven sistem rotacije u odnosu na ostale objekte Sunčevog sistema.
+  </p>
+  <p>
+    Za vreme jedne revolucije, Merkur izvrši svega jednu i po rotaciju (dok Zemlja ima odnos 365:1). Pošto Merkurova orbita leži u ravni sa orbitom Zemlje (kao što je slučaj i sa Venerom), ova planeta je vidljiva na zemljinom nebu tokom ranog jutra i uveče, ali ne i tokom ponoći.
+  </p>
+  <p>
+    Zbog blizine Sunca, retko je u povoljnom položaju za posmatranje, a i tada je vidljiv iznad horizonta samo kratko vreme pre zalaska ili nakon izlaska Sunca. Gledano sa Zemlje, Merkur je vidljiv u raznim fazama (poput Meseca u svojim menama).
+  </p>
+  <p>
+    Prva svemirska letelica koja se približila Merkuru bila je Mariner 10 tokom sedamdesetih godina 20. veka. Ona je tokom tri „susreta“ snimila oko 45% površine planete.
+  </p>
+  <p>
+    Nova sonda MESSENGER, lansirana u avgustu 2004, u orbitu Merkura ušla je u martu 2011. i tokom naredne dve godine uspela je da snimi celokupnu površinu ove planete.
+  </p>`
 
 
 let merkurGalerija = `<img src="images/merkur1.jpg" alt="">
@@ -823,15 +817,21 @@ let merkurZanimljivosti = ` <ul>
                 <li>Neptunski fenomen: Merkur pokazuje fenomen poznat kao "Neptunska sinhronizacija", gde zbog posebne dinamike njegove orbite i rotacije, Sunce "vidi" planetu u različitim položajima svakih nekoliko dana.</li><br>
             </ul>`
 
-let veneraOpis = `Venera (simbol: ♀) je jedna od 8 planeta Sunčevog sistema, i druga je planeta po udaljenosti od Sunca, sa prosečnom udaljenošću od oko 0,72 AJ (ili 108.200.000 km). Oko Sunca se kreće gotovo kružnom orbitom, a jednu rotaciju obavi za 224,7 zemaljskih dana. Nema prirodnih satelita u svojoj orbiti. Drugo je po sjaju nebesko telo na noćnom nebu gledano sa Zemlje, odmah posle Meseca, sa vrednostima prividne magnitude od -4,9 do -3,8.
-<br><br>
-Ime je dobila po starorimskoj boginji ljubavi i lepote Veneri (grčki ekvivalent je Afrodita) i jedina je planeta koja je dobila ime po nekom ženskom mitološkom božanstvu. Gledano sa Zemlje najuočljivija je u sumrak i u ranu zoru, te se često u narodu naziva i Zvezdom Danicom i Zvezdom Večernjačom.
-<br><br>
-Venera spada u grupu terestričkih planeta, a zbog sličnosti sa Zemljom u pogledu dimenzija (najbliža je planeta po udaljenosti od Zemlje i ima približno sličnu veličinu), gravitacije i složene unutrašnje strukture često je označavaju „Zemljinom sestrom“. Venerina atmosfera je veoma gusta sa strukturnim udelom ugljen-dioksida u njenoj građi od čak 96%. Atmosferski pritisak na površini je i do 92 puta viši nego na Zemlji i iznosi 92 bara. Zbog veoma guste atmosfere koja na planeti stvara efekat staklene bašte, površinske temperature su veoma visoke i iznose u proseku oko 735 K, što Veneru čini najtoplijom planetom Sunčevog sistema. Planeta je obavijena gustim i izrazito reflektujućim oblacima sačinjenim od sumporne kiseline.
-<br><br>
-Postoji mogućnost da su u prošlosti na površini Venere postojali okeani koji su verovatno isparili usled povećanja temperatura uzrokovanih efektom staklene bašte. Slobodni atomi vodonika su potom najverovatnije „otplutali u slobodni svemir“ zbog slabog intenziteta magnetnog polja planete, a pod dejstvom solarnih vetrova.
-<br><br>
-Površina Venere je veoma suva i podseća na izrazito suva pustinjska područja na Zemlji sa kojih se mestimično izdižu vulkanske kupe i stenovite ploče. Vulkanska aktivnost na Veneri je veoma visoka i verovatno je ona glavni uzročnik gomilanja ogromnih količina ugljen-dioksida u atmosferi.`
+let veneraOpis = `<p>
+  Venera (simbol: ♀) je jedna od 8 planeta Sunčevog sistema, i druga je planeta po udaljenosti od Sunca, sa prosečnom udaljenošću od oko 0,72 AJ (ili 108.200.000 km). Oko Sunca se kreće gotovo kružnom orbitom, a jednu rotaciju obavi za 224,7 zemaljskih dana. Nema prirodnih satelita u svojoj orbiti. Drugo je po sjaju nebesko telo na noćnom nebu gledano sa Zemlje, odmah posle Meseca, sa vrednostima prividne magnitude od -4,9 do -3,8.
+</p>
+<p>
+  Ime je dobila po starorimskoj boginji ljubavi i lepote Veneri (grčki ekvivalent je Afrodita) i jedina je planeta koja je dobila ime po nekom ženskom mitološkom božanstvu. Gledano sa Zemlje najuočljivija je u sumrak i u ranu zoru, te se često u narodu naziva i Zvezdom Danicom i Zvezdom Večernjačom.
+</p>
+<p>
+  Venera spada u grupu terestričkih planeta, a zbog sličnosti sa Zemljom u pogledu dimenzija (najbliža je planeta po udaljenosti od Zemlje i ima približno sličnu veličinu), gravitacije i složene unutrašnje strukture često je označavaju „Zemljinom sestrom“. Venerina atmosfera je veoma gusta sa strukturnim udelom ugljen-dioksida u njenoj građi od čak 96%. Atmosferski pritisak na površini je i do 92 puta viši nego na Zemlji i iznosi 92 bara. Zbog veoma guste atmosfere koja na planeti stvara efekat staklene bašte, površinske temperature su veoma visoke i iznose u proseku oko 735 K, što Veneru čini najtoplijom planetom Sunčevog sistema. Planeta je obavijena gustim i izrazito reflektujućim oblacima sačinjenim od sumporne kiseline.
+</p>
+<p>
+  Postoji mogućnost da su u prošlosti na površini Venere postojali okeani koji su verovatno isparili usled povećanja temperatura uzrokovanih efektom staklene bašte. Slobodni atomi vodonika su potom najverovatnije „otplutali u slobodni svemir“ zbog slabog intenziteta magnetnog polja planete, a pod dejstvom solarnih vetrova.
+</p>
+<p>
+  Površina Venere je veoma suva i podseća na izrazito suva pustinjska područja na Zemlji sa kojih se mestimično izdižu vulkanske kupe i stenovite ploče. Vulkanska aktivnost na Veneri je veoma visoka i verovatno je ona glavni uzročnik gomilanja ogromnih količina ugljen-dioksida u atmosferi.
+</p>`
 
 let veneraGalerija = `<img src="images/venera1.webp" alt="">
              <img src="images/venera2.jfif" alt="">
@@ -902,13 +902,27 @@ venus.addEventListener("click", () => {
     }
 })
 
-let zemljaOpis = `Zemlja (simbol: 🜨) je treća planeta po udaljenosti od Sunca i jedina poznata planeta u svemiru na kojoj postoji život. Prema radiometrijskom računanju i mišljenju da je ceo Sunčev sistem nastao u jednom procesu, procenjuje se da se Zemlja formirala pre više od 4,5 milijardi godina, što je utvrđeno određivanjem vremena poluraspada urana i torijuma. <br><br> Gravitacija Zemlje međusobno deluje sa drugim objektima u svemiru, posebno sa Suncem i Mesecom, jedinim prirodnim satelitom Zemlje, koji je počeo da kruži oko Zemlje pre 4,53 milijardi godina. Gravitaciono delovanje između Zemlje i Meseca uzrokuje okeanske plime i oseke, stabilizuje orijentaciju Zemlje oko svoje ose i postepeno usporava istu. Zemlja je najgušća planeta u Sunčevom sistemu i najveća od četiri terestričke planete.
-<br><br>
-Zemlja se jednom okrene oko Sunca u 365,26 dana, period poznat kao Zemljina godina. Tokom ovog perioda, Zemlja se okrene oko svoje ose oko 366,26 puta (što je jednako cifri od 365,26 solarnih dana). Zemljina osa rotacije se nalazi pod nagibom od arcsin0,397776995 ≈ 23,4392811° (trenutno se smanjuje konstantnom ugaonom brzinom od ≈ 0,01305˙° = 47″ po veku). Jedna od najvažnijih posledica ovog nagiba je menjanje godišnjih doba na Zemlji.
-<br><br>
-Litosfera Zemlje je podeljena na nekoliko krutih tektonskih ploča koje migriraju na površini tokom mnogo miliona godina. Zemlja je jedina planeta Sunčevog sistema gde voda može da opstane u tečnom stanju. Oko 71% površine Zemlje je pokriveno vodom, uglavnom okeanima. Preostalih 29% je kopno koja čine kontinenti i ostrva koja imaju brojna jezera, reke i druge izvore vode koji doprinose hidrosferi. Većina polarnih područja Zemlje pokrivena je ledom, uključujući ledenu ploču Antarktika i morski led Arktika.<br><br> Unutrašnjost Zemlje je aktivna sa unutrašnjim jezgrom od čvrstog gvožđa i tečnim spoljašnjim jezgrom koji generiše magnetno polje Zemlje i konvekcioni mantl koji pokreće tektonske ploče. Magnetsko polje zajedno sa atmosferom, štiti od radijacije, štetne po živa bića koja naseljavaju planetu. Atmosfera takođe služi kao štit za odbijanje manjih meteoroida — prolazeći kroz atmosferu, oni sagore pre nego što stignu do Zemljine površine.
-<br><br>
-Tokom prvih milijarda godina istorije Zemlje, život se pojavljivao u okeanima i počeo je da utiče na atmosferu i površinu Zemlje, što dovodi do proliferacije aerobnih i anaerobnih organizama. Neki geološki dokazi pokazuju da se život pojavio pre 4,1 milijarde godina. Od tada, kombinacija udaljenosti Zemlje od Sunca, fizičkih osobina i geološke istorije omogućila je životu da se razvija i napreduje. U istoriji Zemlje, biodiverzitet je prošao kroz dugotrajna proširenja, koja su povremeno praćena masovnim izumiranjima.<br><br> Preko 99% svih vrsta koje su ikada živele na Zemlji su izumrle. Procene broja vrsta na Zemlji danas se veoma razlikuju; većina vrsta nisu opisana. Preko 7,6 milijardi ljudi živi na Zemlji i zavisi od njene biosfere i prirodnih resursa za svoj opstanak. Ljudi su razvili različita društva i kulture; politički, u svetu ima oko 200 suverenih država.`
+let zemljaOpis = `<p>
+  Zemlja (simbol: 🜨) je treća planeta po udaljenosti od Sunca i jedina poznata planeta u svemiru na kojoj postoji život. Prema radiometrijskom računanju i mišljenju da je ceo Sunčev sistem nastao u jednom procesu, procenjuje se da se Zemlja formirala pre više od 4,5 milijardi godina, što je utvrđeno određivanjem vremena poluraspada urana i torijuma.
+</p>
+<p>
+  Gravitacija Zemlje međusobno deluje sa drugim objektima u svemiru, posebno sa Suncem i Mesecom, jedinim prirodnim satelitom Zemlje, koji je počeo da kruži oko Zemlje pre 4,53 milijardi godina. Gravitaciono delovanje između Zemlje i Meseca uzrokuje okeanske plime i oseke, stabilizuje orijentaciju Zemlje oko svoje ose i postepeno usporava istu. Zemlja je najgušća planeta u Sunčevom sistemu i najveća od četiri terestričke planete.
+</p>
+<p>
+  Zemlja se jednom okrene oko Sunca u 365,26 dana, period poznat kao Zemljina godina. Tokom ovog perioda, Zemlja se okrene oko svoje ose oko 366,26 puta (što je jednako cifri od 365,26 solarnih dana). Zemljina osa rotacije se nalazi pod nagibom od arcsin0,397776995 ≈ 23,4392811° (trenutno se smanjuje konstantnom ugaonom brzinom od ≈ 0,01305˙° = 47″ po veku). Jedna od najvažnijih posledica ovog nagiba je menjanje godišnjih doba na Zemlji.
+</p>
+<p>
+  Litosfera Zemlje je podeljena na nekoliko krutih tektonskih ploča koje migriraju na površini tokom mnogo miliona godina. Zemlja je jedina planeta Sunčevog sistema gde voda može da opstane u tečnom stanju. Oko 71% površine Zemlje je pokriveno vodom, uglavnom okeanima. Preostalih 29% je kopno koja čine kontinenti i ostrva koja imaju brojna jezera, reke i druge izvore vode koji doprinose hidrosferi. Većina polarnih područja Zemlje pokrivena je ledom, uključujući ledenu ploču Antarktika i morski led Arktika.
+</p>
+<p>
+  Unutrašnjost Zemlje je aktivna sa unutrašnjim jezgrom od čvrstog gvožđa i tečnim spoljašnjim jezgrom koji generiše magnetno polje Zemlje i konvekcioni mantl koji pokreće tektonske ploče. Magnetsko polje zajedno sa atmosferom, štiti od radijacije, štetne po živa bića koja naseljavaju planetu. Atmosfera takođe služi kao štit za odbijanje manjih meteoroida — prolazeći kroz atmosferu, oni sagore pre nego što stignu do Zemljine površine.
+</p>
+<p>
+  Tokom prvih milijarda godina istorije Zemlje, život se pojavljivao u okeanima i počeo je da utiče na atmosferu i površinu Zemlje, što dovodi do proliferacije aerobnih i anaerobnih organizama. Neki geološki dokazi pokazuju da se život pojavio pre 4,1 milijarde godina. Od tada, kombinacija udaljenosti Zemlje od Sunca, fizičkih osobina i geološke istorije omogućila je životu da se razvija i napreduje. U istoriji Zemlje, biodiverzitet je prošao kroz dugotrajna proširenja, koja su povremeno praćena masovnim izumiranjima.
+</p>
+<p>
+  Preko 99% svih vrsta koje su ikada živele na Zemlji su izumrle. Procene broja vrsta na Zemlji danas se veoma razlikuju; većina vrsta nisu opisana. Preko 7,6 milijardi ljudi živi na Zemlji i zavisi od njene biosfere i prirodnih resursa za svoj opstanak. Ljudi su razvili različita društva i kulture; politički, u svetu ima oko 200 suverenih država.
+</p>`
 
 let zemljaGalerija = `<img src="images/earth1.webp" alt="">
              <img src="images/earth2.webp" alt="">
@@ -960,9 +974,24 @@ earth.addEventListener("click", () => {
 })
 
 let marsOpis = `
-Mars (simbol: ♂) je četvrta planeta po udaljenosti od Sunca i druga najmanja u Sunčevom sistemu, nakon Merkura. Dobila je ime po rimskom bogu rata — Marsu. Takođe se naziva i „Crvenom planetom”, jer na površini preovladava gvožđe(III) oksid koji planeti daje crvenkastu boju. <br><br>Mars je terestrička planeta sa tankom atmosferom, i površinskim odlikama koje podsećaju na Mesec — udarni krateri, i na Zemlju — vulkanske kupe, doline, pustinje i polarne ledene kape. Period rotacije i godišnja doba na Marsu su takođe slična onima na Zemlji, a sličan je i nagib ose rotacije planete koji uslovljava godišnja doba.<br><br> Na Marsu se nalazi Olimp (Olimpus Mons) — najveći vulkan i za sada druga najviša planina u Sunčevom sistemu (najviša na nekoj od planeta), kao i Dolina Marinera — jedan od najvećih kanjona u Sunčevom sistemu. Depresija Borealis na severnoj polulopti zauzima 40% površine planete i moguće je da je nastala velikim udarom drugog nebeskog tela u Mars tokom formiranja Sunčevog sistema. Mars ima dva prirodna satelita — Fobos i Dejmos, koji su malih dimenzija i nepravilnog oblika. Moguće je da su oni u stvari uhvaćeni asteroidi, nalik asteroidu 5261 Eureka koji je Marsov trojanac.
-<br><br>
-Sve do prvog uspešnog proleta sonde Mariner 4 pored Marsa 1965. godine, mnogo se pričalo o prisustvu vode u tečnom stanju na površini. Ova nagađanja bila su zasnovana na periodičnim promenama svetlih i tamnih predela na površini, naročito oko polarnih regiona; posmatrači, predvođeni Đovanijem Skjaparelijem i Persivalom Louelom, zaključili su da su to mora i kontinenti. Za duge, tamne linije koje su posmatrači videli kroz svoje teleskope smatralo se da su kanali za navodnjavanje koji su se protezali preko cele površine, i da ih je izgradila civilizacija daleko naprednija od ljudske na Zemlji. <br><br>Za ove linije se kasnije pokazalo da su bile optička varka, mada areološki dokazi prikupljeni robotizovanim sondama poslatim na površinu ukazuju da je Mars u dalekoj prošlosti dobrim delom bio prekriven vodenim prostranstvima. Tokom 2005. godine radarski podaci prikupljeni iz orbite ukazali su na velike količine leda na polovima, ali i na nižoj areografskoj širini. <br><br>Marsovski rover Spirit otkrio je 2007. godine u prikupljenim uzorcima hemijska jedinjenja koja sadrže vodene molekule. Lender Feniks je 31. jula 2008. prikupio direktne uzorke leda koji se nalazio neposredno ispod površine na mestu na kojem se sonda spustila. Agencija Nasa je 28. septembra 2015. objavila dokaze o prisustvu tečne slane vode na površini Marsa u letnjim mesecima.`
+<p>
+  Mars (simbol: ♂) je četvrta planeta po udaljenosti od Sunca i druga najmanja u Sunčevom sistemu, nakon Merkura. Dobila je ime po rimskom bogu rata — Marsu. Takođe se naziva i „Crvenom planetom”, jer na površini preovladava gvožđe(III) oksid koji planeti daje crvenkastu boju.
+</p>
+<p>
+  Mars je terestrička planeta sa tankom atmosferom, i površinskim odlikama koje podsećaju na Mesec — udarni krateri, i na Zemlju — vulkanske kupe, doline, pustinje i polarne ledene kape. Period rotacije i godišnja doba na Marsu su takođe slična onima na Zemlji, a sličan je i nagib ose rotacije planete koji uslovljava godišnja doba.
+</p>
+<p>
+  Na Marsu se nalazi Olimp (Olimpus Mons) — najveći vulkan i za sada druga najviša planina u Sunčevom sistemu (najviša na nekoj od planeta), kao i Dolina Marinera — jedan od najvećih kanjona u Sunčevom sistemu. Depresija Borealis na severnoj polulopti zauzima 40% površine planete i moguće je da je nastala velikim udarom drugog nebeskog tela u Mars tokom formiranja Sunčevog sistema. Mars ima dva prirodna satelita — Fobos i Dejmos, koji su malih dimenzija i nepravilnog oblika. Moguće je da su oni u stvari uhvaćeni asteroidi, nalik asteroidu 5261 Eureka koji je Marsov trojanac.
+</p>
+<p>
+  Sve do prvog uspešnog proleta sonde Mariner 4 pored Marsa 1965. godine, mnogo se pričalo o prisustvu vode u tečnom stanju na površini. Ova nagađanja bila su zasnovana na periodičnim promenama svetlih i tamnih predela na površini, naročito oko polarnih regiona; posmatrači, predvođeni Đovanijem Skjaparelijem i Persivalom Louelom, zaključili su da su to mora i kontinenti. Za duge, tamne linije koje su posmatrači videli kroz svoje teleskope smatralo se da su kanali za navodnjavanje koji su se protezali preko cele površine, i da ih je izgradila civilizacija daleko naprednija od ljudske na Zemlji.
+</p>
+<p>
+  Za ove linije se kasnije pokazalo da su bile optička varka, mada areološki dokazi prikupljeni robotizovanim sondama poslatim na površinu ukazuju da je Mars u dalekoj prošlosti dobrim delom bio prekriven vodenim prostranstvima. Tokom 2005. godine radarski podaci prikupljeni iz orbite ukazali su na velike količine leda na polovima, ali i na nižoj areografskoj širini.
+</p>
+<p>
+  Marsovski rover Spirit otkrio je 2007. godine u prikupljenim uzorcima hemijska jedinjenja koja sadrže vodene molekule. Lender Feniks je 31. jula 2008. prikupio direktne uzorke leda koji se nalazio neposredno ispod površine na mestu na kojem se sonda spustila. Agencija Nasa je 28. septembra 2015. objavila dokaze o prisustvu tečne slane vode na površini Marsa u letnjim mesecima.
+</p>`
 
 let marsGalerija = `<img src="images/mars1.webp" alt="">
             <img src="images/mars2.png" alt="">
@@ -1027,17 +1056,27 @@ mars.addEventListener("click", () => {
 
 let jupiterOpis = `
 
-Jupiter (lat. Iuppiter; grč. Δίας; simbol: ♃) predstavlja jednu od 8 planeta Sunčevog sistema i ujedno najmasivnije nebesko telo u celom Sunčevom sistemu posle Sunca. Sa masom od oko 1,8986×10²⁷ kg, do 2,5 puta je masivniji od preostalih 7 planeta zajedno, odnosno njegova masa čini nešto više od hiljaditog dela mase Sunca, ili 317,8 Zemljinih masa.
-<br><br>
-Peta je planeta po udaljenosti od Sunca i pripada grupaciji planeta poznatih kao gasoviti džinovi (u literaturi poznate i kao Planete Jupiterovog tipa ili Jovijanske planete), zajedno sa Saturnom, Uranom i Neptunom. Od Sunca je udaljen u proseku oko 5,20 AJ, odnosno oko 778.330.000 km.
-<br><br>
-Sa vrednostima prividne magnitude od −1,6 do −2,94 četvrto je najsjajnije nebesko telo gledano sa površine Zemlje (posle Sunca, Meseca i Venere). Njegovo postojanje utvrdili su još drevni astronomi antičkog perioda, a ime planete potiče od vrhovnog starorimskog božanstva Jupitera (starogrčki ekvivalent je bog Zevs).
-<br><br>
-Kao gasoviti džin, Jupiter je najvećim delom izgrađen od gasova i manjim delom od tekućih elemenata, sa dominantnim udelom vodonika (H₂) i helijuma (He). U znatnijoj meri u strukturi planete se nalaze i metan (CH₄), amonijak (NH₃), vodonik deuterid (HD), etan (C₂H₆) i voda (H₂O). Moguće je da ima kamenito jezgro sačinjeno od težih elemenata koji se nalaze pod velikim pritiskom. <br><br>Zbog gasovite građe, površina Jupitera nije jasno definisana i na planeti ne postoje oblici reljefa karakteristični za terestričke planete, a samim tim i gustina planetarne mase je znatno manja u poređenju sa istom grupacijom planeta. Prosečna gustina Jupitera je 1,326 gr/cm³, što je i do 4 puta manje u odnosu na gustinu Venere (5,243 gr/cm³) i Merkura (5,427 gr/cm³).
-<br><br>
-Zbog velike brzine rotacije, planeta ima elipsoidan oblik i dosta je spljoštena na polovima, a ispupčena na ekvatoru. Razlika između ekvatorijalnog (71.492±4 km) i polarnog poluprečnika (66.854±10 km) je oko 4.638 km.
-<br><br>
-Jupiter je planeta sa najdebljim slojem atmosfere među svim planetama Sunčevog sistema, a njegova atmosfera se pruža u visine do preko 5.000 km. Kako planeta nema čvrstu podlogu, donjom granicom atmosfere se smatra tačka na kojoj atmosferski pritisak ima vrednost od 10 bara (1 МРа). Cela atmosfera je veoma aktivna i turbulentna, a karakterišu je veoma jaki vetrovi brzina do 500 km/čas. Najkarakterističnija pojava vezana za atmosferu Jupitera je Velika crvena pega, gigantska oluja ovalnog oblika čije postojanje je utvrđeno još u XVII veku.`
+<p>
+  Jupiter (lat. Iuppiter; grč. Δίας; simbol: ♃) predstavlja jednu od 8 planeta Sunčevog sistema i ujedno najmasivnije nebesko telo u celom Sunčevom sistemu posle Sunca. Sa masom od oko 1,8986×10²⁷ kg, do 2,5 puta je masivniji od preostalih 7 planeta zajedno, odnosno njegova masa čini nešto više od hiljaditog dela mase Sunca, ili 317,8 Zemljinih masa.
+</p>
+<p>
+  Peta je planeta po udaljenosti od Sunca i pripada grupaciji planeta poznatih kao gasoviti džinovi (u literaturi poznate i kao Planete Jupiterovog tipa ili Jovijanske planete), zajedno sa Saturnom, Uranom i Neptunom. Od Sunca je udaljen u proseku oko 5,20 AJ, odnosno oko 778.330.000 km.
+</p>
+<p>
+  Sa vrednostima prividne magnitude od −1,6 do −2,94 četvrto je najsjajnije nebesko telo gledano sa površine Zemlje (posle Sunca, Meseca i Venere). Njegovo postojanje utvrdili su još drevni astronomi antičkog perioda, a ime planete potiče od vrhovnog starorimskog božanstva Jupitera (starogrčki ekvivalent je bog Zevs).
+</p>
+<p>
+  Kao gasoviti džin, Jupiter je najvećim delom izgrađen od gasova i manjim delom od tekućih elemenata, sa dominantnim udelom vodonika (H₂) i helijuma (He). U znatnijoj meri u strukturi planete se nalaze i metan (CH₄), amonijak (NH₃), vodonik deuterid (HD), etan (C₂H₆) i voda (H₂O). Moguće je da ima kamenito jezgro sačinjeno od težih elemenata koji se nalaze pod velikim pritiskom.
+</p>
+<p>
+  Zbog gasovite građe, površina Jupitera nije jasno definisana i na planeti ne postoje oblici reljefa karakteristični za terestričke planete, a samim tim i gustina planetarne mase je znatno manja u poređenju sa istom grupacijom planeta. Prosečna gustina Jupitera je 1,326 gr/cm³, što je i do 4 puta manje u odnosu na gustinu Venere (5,243 gr/cm³) i Merkura (5,427 gr/cm³).
+</p>
+<p>
+  Zbog velike brzine rotacije, planeta ima elipsoidan oblik i dosta je spljoštena na polovima, a ispupčena na ekvatoru. Razlika između ekvatorijalnog (71.492±4 km) i polarnog poluprečnika (66.854±10 km) je oko 4.638 km.
+</p>
+<p>
+  Jupiter je planeta sa najdebljim slojem atmosfere među svim planetama Sunčevog sistema, a njegova atmosfera se pruža u visine do preko 5.000 km. Kako planeta nema čvrstu podlogu, donjom granicom atmosfere se smatra tačka na kojoj atmosferski pritisak ima vrednost od 10 bara (1 МРа). Cela atmosfera je veoma aktivna i turbulentna, a karakterišu je veoma jaki vetrovi brzina do 500 km/čas. Najkarakterističnija pojava vezana za atmosferu Jupitera je Velika crvena pega, gigantska oluja ovalnog oblika čije postojanje je utvrđeno još u XVII veku.
+</p>`
 
 let jupiterGalerija = `<img src="images/jupiter1.jpg" alt="">
             <img src="images/jupiter2.webp" alt="">
@@ -1090,11 +1129,30 @@ jupiter.addEventListener("click", () => {
     }
 })
 
-let saturnOpis = `Saturn (simbol: ♄) je šesta planeta u Sunčevom sistemu. Saturn je udaljen 9,54 AJ ili 1.429.400.000 km od Sunca, ima prečnik 120.536 km (ekvator) i masu 5,68 × 10²⁶ kg. Saturn je po veličini druga planeta Sunčevog sistema nakon Jupitera. Obiđe Sunce za 29,5 godina na srednjoj udaljenosti 1,426 · 10⁹ km. <br><br>Telo mu je znatno spljošteno (ekvatorski prečnik 120.536 km, polarni prečnik 108.728 km), tako da je najspljošteniji među planetama. Masa mu je 95 puta veća od Zemljine. Jedina je planeta čija je gustina manja od gustine vode (690 kg/m³).
-<br><br>
-Saturn se sastoji pretežno od vodonika i helijuma (jednak odnos kao kod Jupitera). Ispod gasovite atmosfere prostire se sloj molekularnog vodonika s nešto zamrznute materije (u kojoj ima tragova metana, amonijaka i drugih supstanci), zatim sloj metalnog vodonika, te središte sa stenovitom jezgrom. Temperatura je u središtu vrlo visoka (12.000 K), pa je to Saturnov izvor energije uporediv s energijom koju prima Sunčevim zračenjem; temperature oblačnog sloja iznosi –130 °C, dok bi temperatura samo zbog doprinosa Sunčevog zračenja bila –170 °C. <br><br>U atmosferi se primećuju svetliji i tamniji oblaci uporedni s ekvatorom, manje istaknuti nego kod Jupitera, jer se, zbog niže temperature, stvaraju bliže središtu planete. Među oblacima se opažaju vrtlozi, kao Velika bela pega. Infracrveno zračenje otkriva topliji polarni vrtlog, vruću pegu. Brzina vetra iznosi do 500 m/s. U ekvatorskom području planeta se vrti s periodom od 10 h 14 min, a središte se, prema podacima prikupljenim pomoću radio talasa, vrti s periodom od 10 h 39 min 22 s.<br><br> Saturn ima prostrano magnetno polje, čiji je magnetni moment 600 puta veći od Zemljinog, a magnetna indukcija na površini iznosi oko 50 μT. Za razliku od Jupitera, osa vrtnje mu je primetno nagnuta. Oko Saturna zabeleženo je 62 prirodna satelita, od kojih je 7 zaokruženo delovanjem vlastite gravitacije (u stvarnosti ima ih više od 150). Neki od njih su (po udaljenosti od središta planeta): Pan, Atlas, Prometej, Pandora, Epimetej, Jan, Mimas, Enkelad, Tetida, Telesto, Kalipso, Diona, Helena, Reja, Titan, Hiperion, Japet, Feba.
-<br><br>
-Karakteristika Saturna su prstenovi koji ga opasuju u 7 pojaseva, a svaki prsten nosi slovo abecede od A do F. Razmaci između pojaseva nose imena po astronomima koji su ih otkrili (Kasini, Gverin, Hajgens, Maksvel, Enke). Kao i Jupiter, Saturn ima mnogo satelita. Osim satelita, u ravnini Saturnovog ekvatora kruži ogroman broj satelitskih čestica, koje čine koncentrične prstene. <br><br>Saturnove prstene je prvi video Kristijan Hajgens 1655. Glavni deo prstena, prečnika 275.000 km, deli se na prsten A (spoljašnji) i prsten B (srednji), između kojih je Kasinijeva pukotina, te prsten C (unutrašnji). Prsten D nalazi se najbliže planeti, dok se dalje od glavnog dela nalazi tanak prsten F (sastavljen od vrpci), širi prsten G i najširi E, usred koga se kreće prirodni satelit Enkelad. Debljina glavnog dela prstena je 1 km. <br><br>Čine ga uglavnom ledene i donekle stenovite čestice, obim kojih se kreće od praha pa do tela metarskog prečnika. Na oblik i delovanje prstena utiču sateliti svojom gravitacijom.`
+let saturnOpis = `<p>
+  Saturn (simbol: ♄) je šesta planeta u Sunčevom sistemu. Saturn je udaljen 9,54 AJ ili 1.429.400.000 km od Sunca, ima prečnik 120.536 km (ekvator) i masu 5,68 × 10²⁶ kg. Saturn je po veličini druga planeta Sunčevog sistema nakon Jupitera. Obiđe Sunce za 29,5 godina na srednjoj udaljenosti 1,426 · 10⁹ km.
+</p>
+<p>
+  Telo mu je znatno spljošteno (ekvatorski prečnik 120.536 km, polarni prečnik 108.728 km), tako da je najspljošteniji među planetama. Masa mu je 95 puta veća od Zemljine. Jedina je planeta čija je gustina manja od gustine vode (690 kg/m³).
+</p>
+<p>
+  Saturn se sastoji pretežno od vodonika i helijuma (jednak odnos kao kod Jupitera). Ispod gasovite atmosfere prostire se sloj molekularnog vodonika s nešto zamrznute materije (u kojoj ima tragova metana, amonijaka i drugih supstanci), zatim sloj metalnog vodonika, te središte sa stenovitom jezgrom. Temperatura je u središtu vrlo visoka (12.000 K), pa je to Saturnov izvor energije uporediv s energijom koju prima Sunčevim zračenjem; temperature oblačnog sloja iznosi –130 °C, dok bi temperatura samo zbog doprinosa Sunčevog zračenja bila –170 °C.
+</p>
+<p>
+  U atmosferi se primećuju svetliji i tamniji oblaci uporedni s ekvatorom, manje istaknuti nego kod Jupitera, jer se, zbog niže temperature, stvaraju bliže središtu planete. Među oblacima se opažaju vrtlozi, kao Velika bela pega. Infracrveno zračenje otkriva topliji polarni vrtlog, vruću pegu. Brzina vetra iznosi do 500 m/s. U ekvatorskom području planeta se vrti s periodom od 10 h 14 min, a središte se, prema podacima prikupljenim pomoću radio talasa, vrti s periodom od 10 h 39 min 22 s.
+</p>
+<p>
+  Saturn ima prostrano magnetno polje, čiji je magnetni moment 600 puta veći od Zemljinog, a magnetna indukcija na površini iznosi oko 50 μT. Za razliku od Jupitera, osa vrtnje mu je primetno nagnuta. Oko Saturna zabeleženo je 62 prirodna satelita, od kojih je 7 zaokruženo delovanjem vlastite gravitacije (u stvarnosti ima ih više od 150). Neki od njih su (po udaljenosti od središta planeta): Pan, Atlas, Prometej, Pandora, Epimetej, Jan, Mimas, Enkelad, Tetida, Telesto, Kalipso, Diona, Helena, Reja, Titan, Hiperion, Japet, Feba.
+</p>
+<p>
+  Karakteristika Saturna su prstenovi koji ga opasuju u 7 pojaseva, a svaki prsten nosi slovo abecede od A do F. Razmaci između pojaseva nose imena po astronomima koji su ih otkrili (Kasini, Gverin, Hajgens, Maksvel, Enke). Kao i Jupiter, Saturn ima mnogo satelita. Osim satelita, u ravnini Saturnovog ekvatora kruži ogroman broj satelitskih čestica, koje čine koncentrične prstene.
+</p>
+<p>
+  Saturnove prstene je prvi video Kristijan Hajgens 1655. Glavni deo prstena, prečnika 275.000 km, deli se na prsten A (spoljašnji) i prsten B (srednji), između kojih je Kasinijeva pukotina, te prsten C (unutrašnji). Prsten D nalazi se najbliže planeti, dok se dalje od glavnog dela nalazi tanak prsten F (sastavljen od vrpci), širi prsten G i najširi E, usred koga se kreće prirodni satelit Enkelad. Debljina glavnog dela prstena je 1 km.
+</p>
+<p>
+  Čine ga uglavnom ledene i donekle stenovite čestice, obim kojih se kreće od praha pa do tela metarskog prečnika. Na oblik i delovanje prstena utiču sateliti svojom gravitacijom.
+</p>`
 
 let saturnGalerija = `<img src="images/saturn1.jpg" alt="">
             <img src="images/saturn2.jpg" alt="">
@@ -1150,11 +1208,24 @@ saturn.addEventListener("click", () => {
     }
 })
 
-let uranOpis = `Uran (simbol: ⛢) je sedma planeta od Sunca, treća najveća i četvrta najmasivnija planeta u Sunčevom sistemu. Dobio je ime po starogrčkom božanstvu neba Uranu, ocu Hrona (Saturna) i dedi Zevsa (Jupitera). Uran je prva planeta otkrivena u modernim vremenima. Iako je vidljiv golim okom kao i ostale ranije otkrivene planete, posmatrači ga nisu priznavali za planetu zbog njegove slabe vidljivosti. <br><br>Vilhelm Heršel je objavio njegovo otkriće 13. marta 1781, proširivši poznate granice Sunčevog sistema po prvi put u novijoj istoriji. Uran je takođe prva planeta otkrivena teleskopom.
-<br><br>
-Uran i Neptun imaju drugačiji unutrašnji i atmosferski sastav od većih gasovitih divova Jupitera i Saturna. Zbog toga ih astronomi ponekad svrstavaju u posebnu kategoriju „ledeni divovi“. Uranova atmosfera, iako je poput Jupiterove i Saturnove sastavljena pretežno od vodonika i helijuma, sadrži i velike procente vodenog, amonijačnog i metanskog leda, uz uobičajene tragove ugljovodonika. <br><br>Atmosfera Urana je najhladnija planetarna atmosfera u Sunčevom sistemu, uz najnižu temperaturu od 49 K (−224 °C). Atmosfera ima složenu slojevitu strukturu, sa vodom za koju se misli da čini najniže oblake, a za metan se misli da čini najviše slojeve oblaka.
-<br><br>
-Kao i ostale planete-džinovi, i Uran ima sistem prstenova (do sada otkriveno 13), magnetosferu i 27 satelita. Uranov sistem ima jedinstvenu konfiguraciju među planetama Sunčevog sistema, pošto je njegova osa rotacije položena na bok, skoro u ravan njegove revolucije oko Sunca; njegov južni i severni pol leže tamo gde je većini planeta ekvator. <br><br>Slike sa Vojadžera 2 su prikazale Uran kao nezanimljivu planetu bez oblaka ili oluja koje su imale druge planete-džinovi. Međutim, posmatrači sa Zemlje su nedavnih godina primetili znake sezonskih promena i pojačane aktivnosti vetra, kada se Uran približi svojoj ravnodnevnici.
+let uranOpis = `<p>
+  Uran (simbol: ⛢) je sedma planeta od Sunca, treća najveća i četvrta najmasivnija planeta u Sunčevom sistemu. Dobio je ime po starogrčkom božanstvu neba Uranu, ocu Hrona (Saturna) i dedi Zevsa (Jupitera). Uran je prva planeta otkrivena u modernim vremenima. Iako je vidljiv golim okom kao i ostale ranije otkrivene planete, posmatrači ga nisu priznavali za planetu zbog njegove slabe vidljivosti.
+</p>
+<p>
+  Vilhelm Heršel je objavio njegovo otkriće 13. marta 1781, proširivši poznate granice Sunčevog sistema po prvi put u novijoj istoriji. Uran je takođe prva planeta otkrivena teleskopom.
+</p>
+<p>
+  Uran i Neptun imaju drugačiji unutrašnji i atmosferski sastav od većih gasovitih divova Jupitera i Saturna. Zbog toga ih astronomi ponekad svrstavaju u posebnu kategoriju „ledeni divovi“. Uranova atmosfera, iako je poput Jupiterove i Saturnove sastavljena pretežno od vodonika i helijuma, sadrži i velike procente vodenog, amonijačnog i metanskog leda, uz uobičajene tragove ugljovodonika.
+</p>
+<p>
+  Atmosfera Urana je najhladnija planetarna atmosfera u Sunčevom sistemu, uz najnižu temperaturu od 49 K (−224 °C). Atmosfera ima složenu slojevitu strukturu, sa vodom za koju se misli da čini najniže oblake, a za metan se misli da čini najviše slojeve oblaka.
+</p>
+<p>
+  Kao i ostale planete-džinovi, i Uran ima sistem prstenova (do sada otkriveno 13), magnetosferu i 27 satelita. Uranov sistem ima jedinstvenu konfiguraciju među planetama Sunčevog sistema, pošto je njegova osa rotacije položena na bok, skoro u ravan njegove revolucije oko Sunca; njegov južni i severni pol leže tamo gde je većini planeta ekvator.
+</p>
+<p>
+  Slike sa Vojadžera 2 su prikazale Uran kao nezanimljivu planetu bez oblaka ili oluja koje su imale druge planete-džinovi. Međutim, posmatrači sa Zemlje su nedavnih godina primetili znake sezonskih promena i pojačane aktivnosti vetra, kada se Uran približi svojoj ravnodnevnici.
+</p>
 `
 
 let uranGalerija = `<img src="images/uranus1.jpg" alt="">
@@ -1218,14 +1289,27 @@ uranus.addEventListener("click", () => {
 })
 
 
-let neptunOpis = `Neptun (simbol: ♆) je osma planeta u Sunčevom sistemu. Udaljen je 30,06 AJ ili 4.504.000.000 km od Sunca, i ima prečnik od 49.532 km (ekvator) i masu od 1,0247 × 10²⁶ kg. Po prečniku Neptun je četvrta planeta po veličini, posle Jupitera, Saturna i Urana. Planetu Neptun opasuju prstenovi, njih ima 4: 1989N3R, 1989N2R, 1989N4R, 1989N1R. Neptunovi prstenovi su slabije izraženi nego kod Saturna ili Urana.
-<br><br>
-Galileo Galilej je primetio Neptun 28. decembra 1612. i 27. januara 1613. Neptun je tih dana bio u gotovo nepomičnom stanju na nebu, tako da Galilej nije mogao da zaključi da je u pitanju planeta, već je mislio da je to zvezda.<br><br> Položaj Neptuna je matematičkim kalkulacijama odredio Irben Leverije, a po tim proračunima ga je na nebu 23. septembra 1846. spazio astronom Johan Gotfrid Gale uz pomoć Hajnriha Darea. Ime je dobio po rimskom bogu mora i njegov je simbol trozubac.
-<br><br>
-Do sada je otkriveno 14 Neptunovih prirodnih satelita. Najveći je Triton, s prečnikom od 2.706 km (otkrio ga je Vilijam Lasel 1846); njegova je staza jako nagnuta prema planetnom ekvatoru i satelit se kreće retrogradno. <br><br>Drugi je Nereida, dok su ostali meseci znatno manji. Najvažniji su (po udaljenosti od središta planete):
-<br><br>
-Najada (otkriven 1989), Talasa (1989), Despina (1989), Galateja (1989), Laris (1981), Protej (1989), Triton (1846), >Nereida (1949)
-Sastav Neptuna sličan je Uranovom sa zajedničkom osobinom da se razlikuje od gasovitih divova Jupitera i Saturna. Neptunova atmosfera, iako slična gasovitim divovima, uz vodonik i helijum sadrži veće količine „leda“ poput vode, amonijaka i metana. Da bi naglasila njihova glavna svojstva, astronomi Neptun i Uran ponekad nazivaju „ledenim divovima.“ Unutrašnjost planete uglavnom je sastavljena od stena i leda. Plava pojava planete rezultat je metana u atmosferi.`
+let neptunOpis = `<p>
+  Neptun (simbol: ♆) je osma planeta u Sunčevom sistemu. Udaljen je 30,06 AJ ili 4.504.000.000 km od Sunca, i ima prečnik od 49.532 km (ekvator) i masu od 1,0247 × 10²⁶ kg. Po prečniku Neptun je četvrta planeta po veličini, posle Jupitera, Saturna i Urana. Planetu Neptun opasuju prstenovi, njih ima 4: 1989N3R, 1989N2R, 1989N4R, 1989N1R. Neptunovi prstenovi su slabije izraženi nego kod Saturna ili Urana.
+</p>
+<p>
+  Galileo Galilej je primetio Neptun 28. decembra 1612. i 27. januara 1613. Neptun je tih dana bio u gotovo nepomičnom stanju na nebu, tako da Galilej nije mogao da zaključi da je u pitanju planeta, već je mislio da je to zvezda.
+</p>
+<p>
+  Položaj Neptuna je matematičkim kalkulacijama odredio Irben Leverije, a po tim proračunima ga je na nebu 23. septembra 1846. spazio astronom Johan Gotfrid Gale uz pomoć Hajnriha Darea. Ime je dobio po rimskom bogu mora i njegov je simbol trozubac.
+</p>
+<p>
+  Do sada je otkriveno 14 Neptunovih prirodnih satelita. Najveći je Triton, s prečnikom od 2.706 km (otkrio ga je Vilijam Lasel 1846); njegova je staza jako nagnuta prema planetnom ekvatoru i satelit se kreće retrogradno.
+</p>
+<p>
+  Drugi je Nereida, dok su ostali meseci znatno manji. Najvažniji su (po udaljenosti od središta planete):
+</p>
+<p>
+  Najada (otkriven 1989), Talasa (1989), Despina (1989), Galateja (1989), Laris (1981), Protej (1989), Triton (1846), >Nereida (1949)
+</p>
+<p>
+  Sastav Neptuna sličan je Uranovom sa zajedničkom osobinom da se razlikuje od gasovitih divova Jupitera i Saturna. Neptunova atmosfera, iako slična gasovitim divovima, uz vodonik i helijum sadrži veće količine „leda“ poput vode, amonijaka i metana. Da bi naglasila njihova glavna svojstva, astronomi Neptun i Uran ponekad nazivaju „ledenim divovima.“ Unutrašnjost planete uglavnom je sastavljena od stena i leda. Plava pojava planete rezultat je metana u atmosferi.
+</p>`
 
 let neptunGalerija = `<img src="images/neptune1.webp" alt="">
             <img src="images/neptune2.jpg" alt="">
@@ -1277,15 +1361,24 @@ neptune.addEventListener("click", () => {
 })
 
 
-let sunceOpis = `Sunce (simbol: ☉) je nama najbliža i najbolje proučena od svih zvezda. Oko njega kruži 8 planeta i njihovi sateliti, 5 patuljastih planeta, asteroidi, komete, meteori i čestice kosmičke prašine, tako da Sunce predstavlja središnju zvezdu Sunčevog sistema. Energija Sunca u vidu sunčeve svetlosti i toplote omogućava život na Zemlji putem procesa fotosinteze i utiče na klimu i vreme na Zemlji. Srednja udaljenost između Sunca i Zemlje je 149.600.000 km ili jedna astronomska jedinica, što svetlost pređe za 8 minuta i 18 sekundi.
-<br><br>
-Sunce je gotovo savršena kugla (razlika između ekvatora i pola je samo 10 km) i sastoji se od gasovite vruće plazme. Ono ima jako magnetno polje. Prečnik Sunca je oko 1 392 000 km, što je 109 puta veće od Zemlje i masu od oko 2×1030 kilograma, te je 330.000 teže od Zemlje, i ono sačinjava 99,86% mase celog Sunčevog sistema.
-<br><br>
-Sunce se sastoji od vodonika (oko 74% njegove mase ili 92% njegove zapremine), helijuma (oko 24% mase i 7% zapremine) i male količine ostalih elemenata, uključujući gvožđe, nikl, kiseonik, silicijum, sumpor, magnezijum, ugljenik, neon, kalcijum i hrom.
-<br><br>
-Sunce pripada spektralnoj klasi G2V. G2 označava da je temperatura na površini približno 5.500 °C (5.780 K), što mu daje belu boju, mada se Sunce čini žuto zbog atmosferskog rasipanja, koje uklanja talase kraćih talasnih dužina (plavu i ljubičastu svetlost) i ostavlja spektar frekvencija koje ljudsko oko opaža kao žuto.<br><br> Ovo rasipanje daje okolnom nebu njegovu plavu boju. Kada se Sunce nalazi nisko na nebu rasipa se još više svetlosti, pa se Sunce čini narandžasto ili crveno. Sunčev spektar sadrži linije jonizovanih i neutralnih metala, kao i vrlo slabe vodonikove linije. Slovo V (rimski broj 5) u oznaci spektralne klase pokazuje da je Sunce zvezda glavnog niza. Ovo znači da ono generiše svoju energiju nuklearnom fuzijom jezgara vodonika u helijum.
-<br><br>
-Sunce je nekada smatrano malom i beznačajnom zvezdom, ali danas je poznato da je ono svetlije od 85% zvezda u galaksiji Mlečni put, od koje su većina crveni patuljci`
+let sunceOpis = `<p>
+  Sunce (simbol: ☉) je nama najbliža i najbolje proučena od svih zvezda. Oko njega kruži 8 planeta i njihovi sateliti, 5 patuljastih planeta, asteroidi, komete, meteori i čestice kosmičke prašine, tako da Sunce predstavlja središnju zvezdu Sunčevog sistema. Energija Sunca u vidu sunčeve svetlosti i toplote omogućava život na Zemlji putem procesa fotosinteze i utiče na klimu i vreme na Zemlji. Srednja udaljenost između Sunca i Zemlje je 149.600.000 km ili jedna astronomska jedinica, što svetlost pređe za 8 minuta i 18 sekundi.
+</p>
+<p>
+  Sunce je gotovo savršena kugla (razlika između ekvatora i pola je samo 10 km) i sastoji se od gasovite vruće plazme. Ono ima jako magnetno polje. Prečnik Sunca je oko 1 392 000 km, što je 109 puta veće od Zemlje i masu od oko 2×10³⁰ kilograma, te je 330.000 teže od Zemlje, i ono sačinjava 99,86% mase celog Sunčevog sistema.
+</p>
+<p>
+  Sunce se sastoji od vodonika (oko 74% njegove mase ili 92% njegove zapremine), helijuma (oko 24% mase i 7% zapremine) i male količine ostalih elemenata, uključujući gvožđe, nikl, kiseonik, silicijum, sumpor, magnezijum, ugljenik, neon, kalcijum i hrom.
+</p>
+<p>
+  Sunce pripada spektralnoj klasi G2V. G2 označava da je temperatura na površini približno 5.500 °C (5.780 K), što mu daje belu boju, mada se Sunce čini žuto zbog atmosferskog rasipanja, koje uklanja talase kraćih talasnih dužina (plavu i ljubičastu svetlost) i ostavlja spektar frekvencija koje ljudsko oko opaža kao žuto.
+</p>
+<p>
+  Ovo rasipanje daje okolnom nebu njegovu plavu boju. Kada se Sunce nalazi nisko na nebu rasipa se još više svetlosti, pa se Sunce čini narandžasto ili crveno. Sunčev spektar sadrži linije jonizovanih i neutralnih metala, kao i vrlo slabe vodonikove linije. Slovo V (rimski broj 5) u oznaci spektralne klase pokazuje da je Sunce zvezda glavnog niza. Ovo znači da ono generiše svoju energiju nuklearnom fuzijom jezgara vodonika u helijum.
+</p>
+<p>
+  Sunce je nekada smatrano malom i beznačajnom zvezdom, ali danas je poznato da je ono svetlije od 85% zvezda u galaksiji Mlečni put, od koje su većina crveni patuljci.
+</p>`
 
 
 let sunceZanimljivosti = `<ul> <li>Sunce je 99,86% mase Sunčevog sistema – Oko 99,86% ukupne mase Sunčevog sistema je koncentrisano u Suncu, što znači da je njegova gravitacija ključna za kretanje svih planeta i objekata oko njega.</li><br> <li>Temperatura na površini Sunca je oko 5.500°C – Površina Sunca, poznata kao fotosfera, ima temperaturu od oko 5.500 stepeni Celzijusa, dok je temperatura u njegovoj unutrašnjosti mnogo viša, do 15 miliona stepeni.</li><br> <li>Sunčeva svetlost putuje 8 minuta do Zemlje – Svetlost koju vidimo na Zemlji putuje od Sunca oko 8 minuta i 20 sekundi, što znači da vidimo Sunce kakvo je bilo pre tih 8 minuta.</li><br> <li>Sunce je staro oko 4,6 milijardi godina – Sunce je nastalo iz oblaka plina i prašine, a procenjuje se da je staro oko 4,6 milijardi godina i da će za još 5 milijardi godina preći u fazu crvenog džina pre nego što postane beli patuljak.</li><br> <li>Sunce nije žut – Iako se često prikazuje kao žuto, Sunce zapravo emituje svetlost koja je bela. Naša atmosfera je razlog što ga vidimo žutim, jer raspršuje svetlost.</li><br> <li>Sunce proizvodi energiju putem nuklearne fuzije – Sunce stvara energiju kroz proces nuklearne fuzije, u kojem se vodonik pretvara u helijum, oslobađajući ogromnu količinu energije koja svetli i zagreva Sunce.</li><br> <li>Sunce ima "sunčevu koronu" koja je mnogo toplija od površine – Sunčeva korona, spoljašnji sloj Sunčeve atmosfere, je mnogo toplija od same površine Sunca, sa temperaturama od 1-3 miliona stepeni Celzijusa.</li><br> <li>Sunčeve sunčane baklje mogu uticati na Zemlju – Sunčeve baklje i koronalne izbacivanje mase mogu izazvati geomagnetske oluje koje mogu uticati na komunikacione sisteme, satelite i čak elektroenergetske mreže na Zemlji.</li><br> <li>Sunce se okreće – Sunce se ne okreće kao čvrsta lopta. Različiti delovi Sunca se rotiraju različitim brzinama, s ekvatorom koji se rotira brže nego polovi (oko 25 dana na ekvatoru i 35 dana na polovima).</li><br> <li>Sunce ima ogromne sunčeve pege – Sunčeve pege su hladnija područja na Sunčevoj površini koja se pojavljuju zbog intenzivnog magnetnog polja. Iako su hladnija, one su i dalje izuzetno vruće u poređenju sa Zemljom.</li><br> </ul>`
